@@ -21,8 +21,8 @@ select*from livro
 
 
 INSERT INTO emprestimo(data_emprestimo, data_prevista, data_devolucao, status_emprestimo) VALUES
-(NOW(), NOW(), NULL, 1),
-(NOW(), NOW(), NULL, 1),
-(NOW(), NOW(), NULL, 1),
+(NOW(), NOW(), NOW(), 1),
+(NOW(), NOW(), NOW(), 1),
+(NOW(), NOW(), NOW(), 1);
 
 select*from emprestimo
