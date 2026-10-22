@@ -26,3 +26,6 @@ INSERT INTO emprestimo(data_emprestimo, data_prevista, data_devolucao, status_em
 (NOW(), NOW(), NOW(), 1);
 
 select*from emprestimo
+
+
+UPDATE USUARIO SET telefone = '1888888888' WHERE id_usuario = 1
