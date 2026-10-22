@@ -19,13 +19,19 @@ INSERT INTO livro(titulo, autor, isbn, ano_publicado, quantidade_disponivel, edi
 
 select*from livro
 
+INSERT INTO EMPRESTIMO (data_prevista, status_emprestimo, id_usuario, id_livro) VALUES
+('2026-05-10', 'ABERTO', 1, 1),
+('2026-05-12', 'ABERTO', 2, 2),
+('2026-05-15', 'ABERTO', 3, 3);
 
-INSERT INTO emprestimo(data_emprestimo, data_prevista, data_devolucao, status_emprestimo) VALUES
-(NOW(), NOW(), NOW(), 1),
-(NOW(), NOW(), NOW(), 1),
-(NOW(), NOW(), NOW(), 1);
 
 select*from emprestimo
 
 
-UPDATE USUARIO SET telefone = '1888888888' WHERE id_usuario = 1
+UPDATE USUARIO SET telefone = '1888888888' WHERE id_usuario = 1;
+
+SET quantidade_disponivel = quantidade_disponivel + 2 WHERE ano_publicado >= 2020;
+
+
+
+
